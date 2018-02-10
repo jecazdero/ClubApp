@@ -1,6 +1,7 @@
 body{
   font-family: Montserrat, sans-serif;
   margin: 0;
+  width: 100%;
   box-sizing: border-box;
 }
 .clear{
@@ -102,7 +103,8 @@ main h1{
   font-family: Sansita, serif;
   font-weight: 400;
 }
-
+/* Central form
+======================================*/
 .input-text{
   padding: 14px;
   border: 1px solid #FFFFFF;
@@ -136,6 +138,29 @@ transition: background-color 0.2s ease;
 
 .input-btn:hover{
   background: #ed145b;
+}
+
+@media only screen and (max-width: 648px) {
+  form {
+    width: 90%;
+    margin: auto;
+  }
+  .input-text{
+    box-sizing: border-box;
+    width: 48%;
+  }
+
+  .input-text:first-child{
+    margin-left: 0;
+    margin-right: 2%;
+  }
+  .input-text:nth-child(2){
+    margin: 0;
+  }
+  .input-btn{
+    width: 100%;
+    margin: 15px 0;
+  }
 }
 
 .message{
@@ -293,6 +318,7 @@ transition: background-color 0.2s ease;
 
 .search-btn{
   cursor: pointer;
+  background-color: #FFFFFF;
   background-image:url("../images/search-icon.png");
   background-repeat: no-repeat;
   display: inline-block;
@@ -340,7 +366,7 @@ transition: background-color 0.2s ease;
 /* Organize a party
 =============================== */
 .party-form{
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .input-party{
@@ -357,6 +383,41 @@ transition: background-color 0.2s ease;
 
 .input-party:focus{
   border: 1px solid #ed145b;
+}
+
+@media only screen and (min-width: 648px) and (max-width: 860px) {
+  .party-form{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-party{
+    width: 30%;
+    margin-left: 0;
+    margin-right: 1%;
+    box-sizing: border-box;
+  }
+
+  .input-party:last-child{
+    width: 32%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .party-form .input-btn{
+    width: 93%;
+    margin: 15px 0;
+  }
+
+}
+
+@media only screen and (max-width: 648px) {
+  .input-party{
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
 }
 
 /* Footer
