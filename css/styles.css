@@ -41,6 +41,7 @@ section{
 .logo h1{
   color: #53159d;
   margin: 0;
+  font-weight: 800;
 }
 
 .promo-text{
@@ -242,13 +243,13 @@ transition: background-color 0.2s ease;
 .sub-header{
   clear: both;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 8%;
   margin-bottom: 10px;
   font-family: Sansita, serif;
 }
 
 .sub-header h2{
-  width: 20%;
+  width: 21%;
   margin: auto;
   color:#53159d;
   background-color: #FFFFFF;
@@ -262,12 +263,19 @@ transition: background-color 0.2s ease;
 
 .header-line {
   content: "";
-  display: block;
+  display: inline-block;
   min-width: 100%;
-  height: 1px;
-  background-color: #f1e7ed;
+  min-height: 100%;
+  border-top: 1px solid #f1e7ed;
   margin-top: -1%;
+  margin-bottom: 1%;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-line {
+    margin-bottom: 3%;
+  }
 }
 
 .search-box{
@@ -320,8 +328,9 @@ transition: background-color 0.2s ease;
 
 .image-section img{
   padding: 5px;
-  width: 24%;
+  width: 25%;
   float: left;
+  box-sizing: border-box;
 }
 
 .large-icon{
@@ -363,7 +372,7 @@ footer ul{
   float: right;
   color: #53159d;
   list-style: none;
-  margin: 10px;
+  margin: 16px 5px;
 }
 
 footer ul li {
