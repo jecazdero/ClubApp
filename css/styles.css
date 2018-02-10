@@ -35,6 +35,12 @@ section{
   display: inline-block;
   width: 20%;
   margin-top: 5px;
+  font-family: Sansita, serif;
+}
+
+.logo h1{
+  color: #53159d;
+  margin: 0;
 }
 
 .promo-text{
