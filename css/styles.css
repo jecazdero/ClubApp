@@ -58,20 +58,6 @@ section{
 .promo-text--mobile{
   display: none;
 }
-@media only screen and (max-width: 648px) {
-  .promo-text--screen{
-    display: none;
-  }
-  .promo-text--mobile{
-    display: inline-block;
-  }
-  .promo-text{
-    border-top: 1px solid #f1e7ed;
-    width: 100%;
-    padding: 5px 0;
-    box-sizing: border-box;
-  }
-}
 
 .pink-text{
   color: #ed145b;
@@ -82,6 +68,7 @@ section{
   display: inline;
   width: 20%;
 }
+
 
 .login .pink-btn{
   float: right;
@@ -102,6 +89,24 @@ section{
 
 .pink-btn:hover{
   background-color: #cc0e4c;
+}
+
+@media only screen and (max-width: 648px) {
+  .login {
+    width: auto;
+  }
+  .promo-text--screen{
+    display: none;
+  }
+  .promo-text--mobile{
+    display: inline-block;
+  }
+  .promo-text{
+    border-top: 1px solid #f1e7ed;
+    width: 100%;
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
 }
 
 /* Main section
@@ -236,7 +241,7 @@ transition: background-color 0.2s ease;
   box-sizing: border-box;
   margin-top: 50px;
 }
-@media only screen and (max-width: 648px) {
+@media only screen and (max-width: 678px) {
   .step{
     clear: both;
     width: 100%;
